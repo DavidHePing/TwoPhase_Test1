@@ -38,9 +38,9 @@ public class TwoPhaseCommitCohort : IDisposable
 
                     return true;
                 }
-                catch
+                catch(Exception ex)
                 {
-                    // TODO: log
+                    Console.WriteLine(ex);
                 }
 
                 return false;
